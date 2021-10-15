@@ -1,3 +1,5 @@
+// Initalize_State of todos
+
 const initialState = {
   todos: [{
     id:1,
@@ -6,6 +8,7 @@ const initialState = {
   }]
 }
 
+// todos reducer 
 const todosReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_TODO': {
@@ -17,6 +20,8 @@ const todosReducer = (state = initialState, action) => {
         ]
       }
     }
+    
+    // toggle todos 
 
     case 'TOGGLE_TODO': {
       const { id } = action.payload;
