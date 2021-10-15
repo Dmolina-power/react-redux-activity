@@ -1,5 +1,9 @@
 const initialState = {
-  todos: []
+  todos: [{
+    id:1,
+    content: 'coding',
+    completed: false
+  }]
 }
 
 const todosReducer = (state = initialState, action) => {
